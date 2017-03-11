@@ -1,3 +1,6 @@
+body {
+  font-family: 'Comfortaa'; }
+
 header {
   display: block;
   position: relative;
@@ -23,8 +26,7 @@ header {
       header .header-wrap .logo .text {
         color: #7aa6c9;
         font-size: 38px;
-        line-height: 22px;
-        font-family: 'Comfortaa'; }
+        line-height: 22px; }
     header .header-wrap .socials {
       display: block;
       position: absolute;
@@ -47,6 +49,37 @@ nav {
     width: 1000px;
     height: 45px;
     margin: 0 auto; }
+    nav .nav-wrap ul {
+      display: block;
+      position: absolute;
+      left: 138px;
+      padding: 0;
+      margin-top: 10px; }
+      nav .nav-wrap ul li {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        color: #f8b447;
+        font-size: 18px;
+        transition: 500ms; }
+        nav .nav-wrap ul li:not(:first-of-type) {
+          margin-left: 20px; }
+        nav .nav-wrap ul li.active {
+          color: #6fac1a; }
+          nav .nav-wrap ul li.active:after {
+            content: "...";
+            display: block;
+            position: absolute;
+            font-size: 55px;
+            color: #f8b447;
+            letter-spacing: 5px;
+            height: 5px;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-17px); }
+        nav .nav-wrap ul li:not([class*="active"]):hover {
+          transform: Scale(1.1);
+          cursor: pointer; }
 
 .container {
   width: 100%;

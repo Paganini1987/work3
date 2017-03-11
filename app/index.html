@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="bower/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 	<main class="container">
@@ -25,12 +26,25 @@
 		</header>
 		<nav>
 			<div class="nav-wrap">
-				
+				<ul>
+					<li class="nav--1 active">About YSW Yogurt</li>
+					<li class="nav--2">Menu</li>
+					<li class="nav--3">Nutrition</li>
+					<li class="nav--4">Locations</li>
+					<li class="nav--5">Franchise info</li>
+					<li class="nav--6">Contact Us</li>
+				</ul>
 			</div>
 		</nav>
 		<div class="wrap">
 			
 		</div>
 	</main>
+	<script>
+		$('[class*=nav--]').on('click',function(){
+			$('[class*=nav--]').removeClass('active');
+			$(this).toggleClass('active');
+		})
+	</script>
 </body>
 </html>
