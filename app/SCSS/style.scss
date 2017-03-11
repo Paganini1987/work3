@@ -1,4 +1,78 @@
-h1 {
-	color: green;
-	font-size: 54px
+@import '_variables';
+header{
+	display: block;
+	position: relative;
+	width: 100%;
+	background: url('../img/headerLine.png') repeat-x 0 40px;
+	.header-wrap {
+		display: block;
+		position: relative;
+		width: 1000px;
+		height: 130px;
+		margin: 0 auto;
+		.logo {
+			display: block;
+			position: absolute;
+			box-sizing:border-box;
+			left:138px;
+			width: 330px;
+			height: 110px;
+			background-color: white;
+			border-radius: 0 0 12px 12px;
+			padding: 43px 17px 32px 17px;
+			box-shadow: 0px 0px 5px 0px rgba( 0, 0, 0, 0.4 );
+			.text {
+				color:$h2TextColor;
+				font-size: 38px;
+				line-height: 22px;
+				font-family: 'Comfortaa';
+			}
+		}
+		.socials {
+			display: block;
+			position: absolute;
+			right:0px;
+			bottom: 5px;
+			.twitter {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+nav {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: #edf2f6;
+	border-top: 1px solid #dbe0e4;
+	border-bottom: 1px solid #dbe0e4;
+	.nav-wrap {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		width: 1000px;
+		height: 45px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	width: 100%;
+	height: 100%;
+	.wrap{
+		display: block;
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+	}
 }
