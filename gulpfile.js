@@ -1,6 +1,7 @@
-var gulp=require("gulp"),
-		browserSync=require("browser-sync"),
-		sass=require('gulp-sass');
+var gulp         = require("gulp"),
+		browserSync  = require("browser-sync"),
+		sass         = require('gulp-sass'),
+		autoprefixer = require('gulp-autoprefixer');
 var SASS={
 		"SRC":'app/scss/**/*.scss',
 		"DEST":'app/css'
@@ -24,7 +25,11 @@ gulp.task('watch',function(){
 });
 gulp.task('sass', function () {
   return gulp.src(SASS.SRC)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(autoprefixer({
+            browsers: ['> 5%'],
+            cascade: false
+        }))
     .pipe(gulp.dest(SASS.DEST));
 });
 

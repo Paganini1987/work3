@@ -1,39 +1,51 @@
 body {
-  font-family: 'Comfortaa'; }
+  font-family: 'Comfortaa';
+}
 
 header {
   display: block;
   position: relative;
   width: 100%;
-  background: url("../img/headerLine.png") repeat-x 0 40px; }
-  header .header-wrap {
-    display: block;
-    position: relative;
-    width: 1000px;
-    height: 130px;
-    margin: 0 auto; }
-    header .header-wrap .logo {
-      display: block;
-      position: absolute;
-      box-sizing: border-box;
-      left: 138px;
-      width: 330px;
-      height: 110px;
-      background-color: white;
-      border-radius: 0 0 12px 12px;
-      padding: 43px 17px 32px 17px;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4); }
-      header .header-wrap .logo .text {
-        color: #7aa6c9;
-        font-size: 38px;
-        line-height: 22px; }
-    header .header-wrap .socials {
-      display: block;
-      position: absolute;
-      right: 0px;
-      bottom: 5px; }
-      header .header-wrap .socials .twitter {
-        margin-right: 10px; }
+  background: url("../img/headerLine.png") repeat-x 0 40px;
+}
+
+header .header-wrap {
+  display: block;
+  position: relative;
+  width: 1000px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+header .header-wrap .logo {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: 138px;
+  width: 330px;
+  height: 110px;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  padding: 43px 17px 32px 17px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+header .header-wrap .logo .text {
+  color: #7aa6c9;
+  font-size: 38px;
+  line-height: 22px;
+}
+
+header .header-wrap .socials {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+
+header .header-wrap .socials .twitter {
+  margin-right: 10px;
+}
 
 nav {
   display: block;
@@ -41,51 +53,91 @@ nav {
   width: 100%;
   background-color: #edf2f6;
   border-top: 1px solid #dbe0e4;
-  border-bottom: 1px solid #dbe0e4; }
-  nav .nav-wrap {
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 1000px;
-    height: 45px;
-    margin: 0 auto; }
-    nav .nav-wrap ul {
-      display: block;
-      position: absolute;
-      left: 138px;
-      padding: 0;
-      margin-top: 10px; }
-      nav .nav-wrap ul li {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        color: #f8b447;
-        font-size: 18px;
-        transition: 500ms; }
-        nav .nav-wrap ul li:not(:first-of-type) {
-          margin-left: 20px; }
-        nav .nav-wrap ul li.active {
-          color: #6fac1a; }
-          nav .nav-wrap ul li.active:after {
-            content: "...";
-            display: block;
-            position: absolute;
-            font-size: 55px;
-            color: #f8b447;
-            letter-spacing: 5px;
-            height: 5px;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-17px); }
-        nav .nav-wrap ul li:not([class*="active"]):hover {
-          transform: Scale(1.1);
-          cursor: pointer; }
+  border-bottom: 1px solid #dbe0e4;
+}
+
+nav .nav-wrap {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+nav .nav-wrap ul {
+  display: block;
+  position: absolute;
+  left: 138px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav .nav-wrap ul li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  color: #f8b447;
+  font-size: 18px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+nav .nav-wrap ul li:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+nav .nav-wrap ul li.active {
+  color: #6fac1a;
+}
+
+nav .nav-wrap ul li.active:after {
+  content: "...";
+  display: block;
+  position: absolute;
+  font-size: 55px;
+  color: #f8b447;
+  letter-spacing: 5px;
+  height: 5px;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-17px);
+  transform: translateX(-17px);
+}
+
+nav .nav-wrap ul li:not([class*="active"]):hover {
+  -webkit-transform: Scale(1.1);
+  transform: Scale(1.1);
+  cursor: pointer;
+}
 
 .container {
   width: 100%;
-  height: 100%; }
-  .container .wrap {
-    display: block;
-    position: relative;
-    width: 1000px;
-    margin: 0 auto; }
+  height: 100%;
+}
+
+.container .middle {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 28px;
+  background: url("../img/main_line.png") repeat-x;
+}
+
+.container .middle .banner-wrap {
+  display: block;
+  position: relative;
+  width: 1000px;
+  height: 410px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  background: white;
+}
+
+.container .middle .banner-wrap img {
+  display: block;
+  max-width: 100%;
+}
