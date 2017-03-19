@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1200">
-	<title>Yogurt Shoppe</title>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="bower/jquery/dist/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Yogurt Shoppe</title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="bower/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<main class="container">
-		<header>
-			<div class="header-wrap">
-				<section>
-					<div class="logo">
-						<div class="text">Yogurt Shoppe</div>
-					</div>
-				</section>
-				<div class="socials">
-					<i class="twitter"><img src="img/Twitter-256x256.png" alt="tw"></i>
-					<i class="facebook"><img src="img/facebook-icon.png" alt="fb"></i>
-				</div>
-			</div>
-		</header>
-		<nav>
-			<div class="nav-wrap">
-				<ul>
-					<li class="nav--1 active">About YSW Yogurt</li>
-					<li class="nav--2">Menu</li>
-					<li class="nav--3">Nutrition</li>
-					<li class="nav--4">Locations</li>
-					<li class="nav--5">Franchise info</li>
-					<li class="nav--6">Contact Us</li>
-				</ul>
-			</div>
-		</nav>
-		<section class="middle">
-			<div class="banner-wrap">
-				<img src="img/Banner.jpg" alt="Banner">
-			</div>
-		</section>
-	</main>
-	<script>
-		$('[class*=nav--]').on('click',function(){
-			$('[class*=nav--]').removeClass('active');
-			$(this).toggleClass('active');
-		})
-	</script>
+  <main class="container">
+    <header>
+      <div class="header-wrap">
+        <section>
+          <div class="logo">
+            <div class="text">Yogurt Shoppe</div>
+          </div>
+        </section>
+        <div class="socials">
+          <i class="twitter"><img src="img/Twitter-256x256.png" alt="tw"></i>
+          <i class="facebook"><img src="img/facebook-icon.png" alt="fb"></i>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-wrap">
+        <ul>
+          <li class="nav--1 active">About YSW Yogurt</li>
+          <li class="nav--2">Menu</li>
+          <li class="nav--3">Nutrition</li>
+          <li class="nav--4">Locations</li>
+          <li class="nav--5">Franchise info</li>
+          <li class="nav--6">Contact Us</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="middle">
+      <div class="banner-wrap">
+        <img src="img/Banner.jpg" alt="Banner">
+      </div>
+      <div class="items_lnc">
+        <article>
+          <div>
+            <img src="img/locations.png" alt="">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+            <a href="#">See more</a>
+          </div>
+        </article>
+        <article>
+          <div>
+            <img src="img/news.png" alt="">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+            <a href="#">Read more</a>
+          </div>
+        </article>
+        <article>
+         <div>
+            <img src="img/contact.png" alt="">
+           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+           <a href="#">Contact Us</a>
+         </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      
+    </footer>
+  </main>
+  <script>
+    $('[class*=nav--]').on('click',function(){
+      $('[class*=nav--]').removeClass('active');
+      $(this).toggleClass('active');
+    })
+  </script>
 </body>
 </html>
